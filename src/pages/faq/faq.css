@@ -1,0 +1,129 @@
+body{
+    background-color: #ECFADC;
+}
+.solar-system {
+    position: relative;
+    width: 780px;
+    height: 780px;
+    margin: auto;
+    overflow: hidden;
+}
+#sun {
+    height: 200px;
+    width: 200px;
+    background-color: #fae20a;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 50%;
+    box-shadow: 0 0 84px orange;
+}
+#venus {
+    margin-top: -20px;
+    margin-left: -20px;
+    height: 40px;
+    width: 40px;
+    background-color: #3498db;
+    box-shadow: 0 0 34px #3a4385;
+}
+#mercury {
+    margin-top: -13.5px;
+    margin-left: -13.5px;
+    height: 25px;
+    width: 25px;
+    background-color: #a65e22;
+    box-shadow: 0 0 34px #854d3a;
+}
+
+
+
+
+
+
+
+
+
+.orbit {
+    border: 1px dashed #666;
+}
+
+#sun,
+.orbit,
+.orbit + div,
+.orbit + div > div {
+    position: absolute;
+}
+
+#sun,
+.orbit,
+.orbit + div {
+    top: 50%;
+    left: 50%;
+}
+.orbit + div > div {
+    top: 0;
+    left: 50%;
+}
+
+.orbit,
+.orbit + div div{
+    border-radius: 50%;
+}
+
+
+
+.venus-orbit,
+.venus-spin {
+    margin-top: -185px;
+    margin-left: -185px;
+    width: 370px;
+    height: 370px;
+}
+
+
+
+.mercury-orbit,
+.mercury-spin {
+    width: 280px;
+    height: 280px;
+    margin-left: -140px;
+    margin-top: -140px;
+}
+
+
+
+
+
+
+
+
+@keyframes spin-right {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.mercury-spin {
+    animation: spin-right 8.8s linear infinite;
+}
+.venus-spin {
+    animation: spin-right 22s linear infinite;
+}
+.earth-spin {
+    animation: spin-right 36.5s linear infinite;
+}
+.mars-spin {
+    animation: spin-right 68.7s linear infinite;
+}
+
+
+
+.verylong {
+    height: 2000px;
+  }
+  
+  svg {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+  }
