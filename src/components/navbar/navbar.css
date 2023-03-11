@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.navbar{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    background: #ECFADC;
+    margin: 0px;
+
+    justify-content: right;
+    align-items: center;
+    padding-right: 200px;
+
+    font-size: 24px;
+    font-weight: bolder;
+    color: #043517;
+    font-family: 'Montserrat';
+    gap: 51px;
+}
+
+.box{
+    cursor: pointer;
+}
