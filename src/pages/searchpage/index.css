@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.main{
+.main2{
+    width: 100%;
+    display: inline;
     height: 658px;
     background: #F6F8FA;
 }
@@ -15,7 +17,4 @@ font-weight: 600;
 font-size: 32px;
 letter-spacing: -0.045em;
 color: #000000;
-}
-.box2{
-height:135+22+39;
 }
