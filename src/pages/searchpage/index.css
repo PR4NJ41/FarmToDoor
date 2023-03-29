@@ -1,14 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .main2{
     width: 100%;
-    display: inline;
-    height: 658px;
+    display: flex;
+    height: 100%;
+    margin: 0px;
     background: #F6F8FA;
+    flex-direction: column;
 }
 .box1{
+top: 120px;
 height: 410px;
 width: 100%;
+position: absolute;
 background: radial-gradient(50% 50% at 50% 50%, rgba(122, 204, 111, 0.82) 0%, #6AB860 100%);
+}
+.box2cat{
+top: 532px;
+position: absolute;
+background: #F6F8FA;
+width: 100%;
+}
+.box2pro{
+    top: 790px;
+    position: absolute;
+    width: 100%; 
+background: #F6F8FA;
+    
 }
 .text1{
 font-family: 'Montserrat';

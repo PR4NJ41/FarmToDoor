@@ -10,16 +10,16 @@ const index = () => {
       <Navbar/>
       <div className="main2">
 			<div className="box1"></div>
-            <div className="box2">
+            <div className="box2cat">
                 <div className="text1">Categories</div>
                 <div className="box3">
                   <Card1 name="fruit" add={"/images/fruit.png"}/>
                 </div>
             </div>
-            <div className="box2"> 
+            <div className="box2pro"> 
             <div className="text1">Popular Products</div>
             <div className="box3">
-                  <Card2 name="Strawberry" add={"/images/strawberry.png"} seller="Swadesh farm" cost="20"/>
+                  <Card2 name="Strawberry" add={"/images/strawberry.png"} seller="Swadesh farm" cost="2000"/>
                 </div>
             </div>
 		</div>
