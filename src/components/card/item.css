@@ -3,4 +3,6 @@
     flex-direction: column;
     position:fixed;
     top:0;
+    color:darkgreen;
+    z-index: 1100;
 }

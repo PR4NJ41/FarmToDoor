@@ -12,6 +12,7 @@ function Index() {
 		name: "Strawberry",
 		seller: "Swadesh farm h bhai",
 		cost: "2000",
+		path : "/images/strawberry.png"
 	};
 	return (
 		<>
@@ -42,17 +43,24 @@ function Index() {
 						</div>
 					</div>
 				</div>
-				<div className="backDrop">
-					<div className="popupss">
+				 {/*
+				  <div className="backDrop">
+  					<div className="popupss">  
+				 */}
 						<Item
-							trigger={true}
+							id = "itmes"
+							trigger={ItemPopup}
+							setTrigger = {setItemPopup}
 							itemName={fruits.name}
 							itemFrom={fruits.seller}
 							itemPrice={fruits.cost}
+							itemImgPath={fruits.path}
 						/>
 					</div>
-				</div>
-			</div>
+				 {/*
+				  </div>
+  			</div> 
+				 */} 
 		</>
 	);
 }
