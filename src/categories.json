@@ -1,0 +1,21 @@
+[{
+    "name": "Fruits",
+    "add": "/images/fruit.png"
+},
+{
+    "name": "Vegetables",
+    "add": "/images/fruit.png"
+},
+{
+    "name": "Cereals",
+    "add": "/images/fruit.png"
+},
+{
+    "name": "Nuts",
+    "add": "/images/fruit.png"
+},
+{
+    "name": "Seeds",
+    "add": "/images/fruit.png"
+}
+]
