@@ -5,15 +5,17 @@ import Navbar from "../../components/navbar/navbar";
 import Card1 from "../../components/categories_card/categories_card";
 import Card2 from "../../components/card/card";
 import { useState } from "react";
+import fruits from "./../../data.json";
+import categories from "./../../categories.json";
 
 function Index() {
 	const [ItemPopup, setItemPopup] = useState(false);
-	const fruits = {
-		name: "Strawberry",
-		seller: "Swadesh farm h bhai",
-		cost: "2000",
-		path : "/images/strawberry.png"
-	};
+	// const fruits = {
+	// 	name: "Strawberry",
+	// 	seller: "Swadesh farm h bhai",
+	// 	cost: "2000",
+	// 	add: "/images/strawberry.png",
+	// };
 	return (
 		<>
 			<Navbar />
@@ -22,25 +24,30 @@ function Index() {
 				<div className="box2cat">
 					<div className="text1">Categories</div>
 					<div className="box3">
-						<Card1 name="fruit" add={"/images/fruit.png"} />
+					{categories.map((item)=>(
+						<Card1 name={item.name} add={item.add}/>
+					))}
 					</div>
 				</div>
 				<div className="box2pro">
 					<div className="text1">Popular Products</div>
 					<div className="box3">
+					{fruits.map((item) => (
 						<div
 							onClick={() => {
 								setItemPopup(!ItemPopup);
 								console.log("ok");
 							}}
 						>
-							<Card2
-								name="Strawberry"
-								add={"/images/strawberry.png"}
-								seller="Swadesh farm"
-								cost="2000"
-							/>
+							
+								<Card2
+									name={item.name}
+									add={item.add}
+									seller={item.seller}
+									cost={item.cost} />
+							
 						</div>
+						))}
 					</div>
 				</div>
 				 {/*
