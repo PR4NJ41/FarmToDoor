@@ -10,7 +10,7 @@
 .box1 {
 	top: 120px;
 	height: 410px;
-	/* width: 100%; */
+	width: 100%;
 	position: absolute;
 	background: radial-gradient(
 		50% 50% at 50% 50%,

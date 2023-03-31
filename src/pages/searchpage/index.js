@@ -7,15 +7,10 @@ import Card2 from "../../components/card/card";
 import { useState } from "react";
 import fruits from "./../../data.json";
 import categories from "./../../categories.json";
+import item from "../../components/card/item";
 
 function Index() {
 	const [ItemPopup, setItemPopup] = useState(false);
-	// const fruits = {
-	// 	name: "Strawberry",
-	// 	seller: "Swadesh farm h bhai",
-	// 	cost: "2000",
-	// 	add: "/images/strawberry.png",
-	// };
 	return (
 		<>
 			<Navbar />
@@ -24,50 +19,45 @@ function Index() {
 				<div className="box2cat">
 					<div className="text1">Categories</div>
 					<div className="box3">
-					{categories.map((item)=>(
-						<Card1 name={item.name} add={item.add}/>
-					))}
+						{categories.map((item) => (
+							<Card1 name={item.name} add={item.add} />
+						))}
 					</div>
 				</div>
 				<div className="box2pro">
 					<div className="text1">Popular Products</div>
 					<div className="box3">
-					{fruits.map((item) => (
-						<div
-							onClick={() => {
-								setItemPopup(!ItemPopup);
-								console.log("ok");
-							}}
-						>
-							
+						{fruits.map((item) => (
+							<div
+								onClick={() => {
+									setItemPopup(!ItemPopup);
+
+									console.log("ok", item.name);
+								}}
+							>
+
 								<Card2
 									name={item.name}
 									add={item.add}
 									seller={item.seller}
 									cost={item.cost} />
-							
-						</div>
+
+								<Item
+									id="itmes"
+									trigger={ItemPopup}
+									setTrigger={setItemPopup}
+									itemName={item.name}
+									itemFrom={item.seller}
+									itemPrice={item.cost}
+									itemImgPath={item.add}
+								/>
+
+							</div>
 						))}
 					</div>
 				</div>
-				 {/*
-				  <div className="backDrop">
-  					<div className="popupss">  
-				 */}
-						<Item
-							id = "itmes"
-							trigger={ItemPopup}
-							setTrigger = {setItemPopup}
-							itemName={fruits.name}
-							itemFrom={fruits.seller}
-							itemPrice={fruits.cost}
-							itemImgPath={fruits.path}
-						/>
-					</div>
-				 {/*
-				  </div>
-  			</div> 
-				 */} 
+
+			</div>
 		</>
 	);
 }

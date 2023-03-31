@@ -1,0 +1,12 @@
+[{
+        "name": "Strawberry",
+		"quantity": "2",
+		"cost": "2000",
+		"add": "/images/strawberry.png"
+    },
+    {
+        "name": "Strawberry",
+		"quantity": "1",
+		"cost": "2000",
+		"add": "/images/strawberry.png"
+    }]
