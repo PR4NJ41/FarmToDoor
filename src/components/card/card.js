@@ -2,7 +2,7 @@ import "./card.css";
 import React from "react";
 
 const Card = ({ name, add, cost, seller }) => {
-	console.log(name, add);
+	// console.log(name, add);
 	return (
 		<div>
 			<div className="mainCard ">
