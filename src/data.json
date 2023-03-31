@@ -2,61 +2,50 @@
     {
         "name": "Strawberry",
 		"seller": "Swadesh farm h bhai",
-		"cost": "2000",
+		"cost": "350",
 		"add": "/images/strawberry.png"
     },
     {
-        "name": "Cilantro",
+        "name": "Watermelon",
 		"seller": "Green farm",
-		"cost": "2000",
+		"cost": "20",
 		"add": "/images/strawberry.png"
     },
     {
         "name": "Ground Nuts",
-		"seller": "Swadesh farm h bhai",
-		"cost": "2000",
+		"seller": "Desi farm",
+		"cost": "90",
 		"add": "/images/strawberry.png"
     },
     {
-        "name": "Strawberry",
-		"seller": "Swadesh farm h bhai",
-		"cost": "2000",
+        "name": "Cabbage",
+		"seller": "Indian farmers",
+		"cost": "15",
 		"add": "/images/strawberry.png"
     },
     {
-        "name": "Strawberry",
-		"seller": "Swadesh farm h bhai",
-		"cost": "2000",
+        "name": "Wheat",
+		"seller": "Green Farm",
+		"cost": "19",
 		"add": "/images/strawberry.png"
     },
     {
-        "name": "Strawberry",
-		"seller": "Swadesh farm h bhai",
-		"cost": "2000",
+        "name": "Rice",
+		"seller": "Nature's Farm",
+		"cost": "25",
+		"add": "/images/rice.png"
+    },
+    {
+        "name": "Mango",
+		"seller": "Nature's Farm",
+		"cost": "80",
 		"add": "/images/strawberry.png"
     },
     {
-        "name": "Strawberry",
+        "name": "Moong",
 		"seller": "Swadesh farm h bhai",
-		"cost": "2000",
-		"add": "/images/strawberry.png"
-    },
-    {
-        "name": "Strawberry",
-		"seller": "Swadesh farm h bhai",
-		"cost": "2000",
-		"add": "/images/strawberry.png"
-    },
-    {
-        "name": "Strawberry",
-		"seller": "Swadesh farm h bhai",
-		"cost": "2000",
-		"add": "/images/strawberry.png"
-    },
-    {
-        "name": "Strawberry",
-		"seller": "Swadesh farm h bhai",
-		"cost": "2000",
+		"cost": "102",
 		"add": "/images/strawberry.png"
     }
+    
 ]
