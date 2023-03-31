@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-.categories_card{
+.cardCategory{
 display: flex;
 width: 73px;
 height: 87px;
@@ -11,7 +11,7 @@ justify-content: space-around;
 margin: 43px;
 padding: 24px 24px 24px 24px;
 }
-.txt{
+.txtCategory{
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -21,7 +21,7 @@ letter-spacing: -0.065em;
 color: #000000;
 align-self: center;
 }
-.img{
+.imgCategory{
 width: 53;
 height: 53;
 margin: 24px;

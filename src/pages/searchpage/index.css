@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.main2 {
+.mainSearch {
 	width: 100%;
 	display: flex;
 	height: 100%;
@@ -7,7 +7,7 @@
 	background: #f6f8fa;
 	flex-direction: column;
 }
-.box1 {
+.box1Search {
 	top: 120px;
 	height: 410px;
 	width: 100%;
@@ -18,19 +18,19 @@
 		#6ab860 100%
 	);
 }
-.box2cat {
+.boxCatSearch {
 	top: 532px;
 	position: absolute;
 	background: #f6f8fa;
 	width: 100%;
 }
-.box2pro {
+.boxProSearch {
 	top: 790px;
 	position: absolute;
 	width: 100%;
 	background: #f6f8fa;
 }
-.text1 {
+.txtSearch {
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 600;
@@ -39,7 +39,7 @@
 	color: #000000;
 }
 
-.popupss {
+.popupSearch {
 	display: flex;
 	position: fixed;
 	top: 10%;
@@ -50,10 +50,10 @@
     height: 80%;
     justify-self: center;
     border-radius: 12px;
-    backdrop-filter: blur(5px);
+    backDropSearch-filter: blur(5px);
 }
 
-.backDrop{
+.backDropSearch{
 	position: fixed;
 	top: 0px;
     left: 0px;
@@ -61,10 +61,10 @@
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(5px);
+    backDrop-filter: blur(5px);
 }
 
-.box3{
+.box3Search{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;

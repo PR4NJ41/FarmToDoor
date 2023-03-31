@@ -5,11 +5,11 @@ const Card = ({ name, add, cost, quantity }) => {
 	console.log(name, add);
 	var itemcost=cost*quantity;
 	return (
-		<div className="rowcart">
-			<img classname="item_img" src={add}></img>
-			<p className="item_name">{name}</p>
-			<text className="item_quantity">{quantity}</text>
-			<text className="item_price">{itemcost}</text>
+		<div className="rowCartCard">
+			<img classname="imgCartCard" src={add}></img>
+			<p className="nameCartCard">{name}</p>
+			<text className="quantityCartCard">{quantity}</text>
+			<text className="priceCartCard">{itemcost}</text>
 		</div>
 	);
 };

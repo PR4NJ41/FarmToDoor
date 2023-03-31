@@ -7,17 +7,17 @@ const index = () => {
   return (
 	<>
 		<Navbar/>
-		<div className="main">
-			<h1 className="landingPageHeading">Locally Produced<br/>
+		<div className="mainHome">
+			<h1 className="headingHome">Locally Produced<br/>
 			Delivered Direct To<br/>
 			Your Door</h1>
-			<div className='searchBoxContainer'>
-				<input className="searchBox" placeholder="Enter address to find nearby shops"/>
-				<Link to="/searchpage"><button className="searchBoxButton" >Shop Now</button></Link>
+			<div className='searchBoxContainerHome'>
+				<input className="searchBoxHome" placeholder="Enter address to find nearby shops"/>
+				<Link to="/searchpage"><button className="searchBoxButtonHome" >Shop Now</button></Link>
 			</div>
-			<div className="scooterBox">
-				<img className="img1" src="/images/ellipse.svg" alt="Ellipse" />
-				<img className="scooter" src="/images/scooter3.svg" alt="Scooter" /> 
+			<div className="scooterBoxHome">
+				<img className="imgHome" src="/images/ellipse.svg" alt="Ellipse" />
+				<img className="scooterHome" src="/images/scooter3.svg" alt="Scooter" /> 
 			</div>
 
 		</div>

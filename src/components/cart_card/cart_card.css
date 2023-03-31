@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.rowcart{
+.rowCartCard{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.item_img{
+.imgCartCard{
     height: 5%;
     width: 5%;
 }
-.item_name{
+.nameCartCard{
     font-weight: 400;
     font-size: 15;
     font-family: "Montserrat";

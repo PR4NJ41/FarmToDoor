@@ -5,10 +5,10 @@ import {Link} from 'react-router-dom';
 const navbar = () => {
   return (
     <>
-		<div className='navbar'>
-		<Link to="/" className='box'>Home</Link>
-			<Link to="/about_us" className='box'>About Us</Link>
-			<Link to="/faq" className='box'>FAQ</Link>
+		<div className='mainNavbar'>
+		<Link to="/" className='boxNavbar'>Home</Link>
+			<Link to="/about_us" className='boxNavbar'>About Us</Link>
+			<Link to="/faq" className='boxNavbar'>FAQ</Link>
 		</div>
     </>
   )

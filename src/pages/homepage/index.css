@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.main {
+.mainHome{
     background: #ecfadc;
     margin: 0px;
     width: 100%;
@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
 }
-.landingPageHeading {
+.headingHome {
     color: #155e33;
     margin: 0px;
     font-size: 75px;
@@ -23,14 +23,14 @@
     text-align: center;
     padding-top: 50px;
 }
-.searchBoxContainer {
+.searchBoxContainerHome {
     display: flex;
     flex-direction: row;
     align-self: center;
     align-items: center;
     margin-top: 98px;
 }
-.searchBox {
+.searchBoxHome {
     width: 610px;
     height: 80px;
     display: flex;
@@ -45,7 +45,7 @@
     padding: 0px 50px;
 }
 
-.searchBoxButton {
+.searchBoxButtonHome {
     width: 179px;
     height: 66px;
     background: #216f41;
@@ -65,16 +65,16 @@
     left: -191px;
     cursor: pointer;
 }
-.scooterBox{
+.scooterBoxHome{
     width: 100%;
 }
 
-.img1 {
+.imgHome {
     margin-top: 228px;
     width: 100%;
     /* display: none; */
 }
-.scooter {
+.scooterHome {
     display: flex;
     width: 200px;
     height: auto;
@@ -87,7 +87,6 @@
     offset-path: path('M 1753.24 643 C 1753.74 635.038 1754 627.037 1754 619 C 1754 277.136 1291.06 0 720 0 C 148.938 0 -314 277.136 -314 619 C -314 627.037 -313.744 635.038 -313.237 643');
     animation: move 10s infinite normal ease-out;
     animation-direction: reverse;
-    
 }
 
 @keyframes move {

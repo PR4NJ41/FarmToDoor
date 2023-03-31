@@ -14,19 +14,19 @@ function Index() {
 	return (
 		<>
 			<Navbar />
-			<div className="main2">
-				<div className="box1"></div>
-				<div className="box2cat">
-					<div className="text1">Categories</div>
-					<div className="box3">
+			<div className="mainSearch">
+				<div className="box1Search"></div>
+				<div className="boxCatSearch">
+					<div className="txtSearch">Categories</div>
+					<div className="box3Search">
 						{categories.map((item) => (
 							<Card1 name={item.name} add={item.add} />
 						))}
 					</div>
 				</div>
-				<div className="box2pro">
-					<div className="text1">Popular Products</div>
-					<div className="box3">
+				<div className="boxProSearch">
+					<div className="txtSearch">Popular Products</div>
+					<div className="box3Search">
 						{fruits.map((item) => (
 							<div
 								onClick={() => {

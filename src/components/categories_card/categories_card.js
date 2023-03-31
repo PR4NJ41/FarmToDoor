@@ -5,9 +5,9 @@ const categories_card = ({name,add}) => {
   console.log(name,add);
   return (
     <>
-		<div className='categories_card'>
-			<img src={add} alt="category_img"></img>
-            <div className='txt'>{name}</div>
+		<div className='cardCategory'>
+			<img src={add} alt="imgCategory"></img>
+            <div className='txtCategory'>{name}</div>
 		</div>
     </>
   )

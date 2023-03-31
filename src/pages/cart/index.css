@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.line{
+.lineCart{
     height: 2px;
     width: 80%;
     background-color: black;
@@ -7,18 +7,18 @@
     margin-left: 10%;
     margin-right: 10%;
 }
-.MyCart{
+.txtCart{
     margin-left: 15%;
     font-size: 37px;
     font-weight: 400;
     font-family: "Montserrat";
 }
-.col{
+.colCart{
     font-size: 24px;
     font-weight: 400;
     font-family: "Montserrat";
 }
-.rowhead{
+.rowCart{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

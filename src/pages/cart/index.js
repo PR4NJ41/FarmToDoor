@@ -8,16 +8,16 @@ const index = () => {
   return (
 	<>
 		<Navbar/>
-		<div className="main2">
-			<text className="MyCart">My Cart</text>
-            <div className="line"></div>
-			<div className="rowhead">
-			<text className="col">Product Name</text> 
-			<text className="col">Quantity</text>
-			<text className="col">Price</text>
+		<div className="mainSearch">
+			<text className="txtCart">My Cart</text>
+            <div className="lineCart"></div>
+			<div className="rowCart">
+			<text className="colCart">Product Name</text> 
+			<text className="colCart">Quantity</text>
+			<text className="colCart">Price</text>
 			</div>
-			<div className="line"></div>
-			<div className="cart_items">
+			<div className="lineCart"></div>
+			<div className="itemsCart">
                 {cart_data.map((element)=> (
 					<Card name={element.name} add={element.add} cost={element.cost} quantity={element.quantity}/>
 				))}

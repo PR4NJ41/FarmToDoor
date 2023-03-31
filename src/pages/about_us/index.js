@@ -7,15 +7,15 @@ const about = () => {
     return (
         <div>  
                 <Navbar className="nave"/>
-            <div className="aboutus_main">
-            <div className="black">
-                <div className="aboutus">ABOUT US</div>
-                <p className="para1">INTO partnerships empower universities to recruit international students with unparalleled reach, control and transparency. Our global recruitment network, digital platforms and forensic insights strengthen universities’ presence in key and emerging markets, while our focus on student success supports academic and career achievement on campus.
+            <div className="mainAboutUs">
+            <div className="blackAboutUs">
+                <div className="headingAboutUs">ABOUT US</div>
+                <p className="paraAboutUs">INTO partnerships empower universities to recruit international students with unparalleled reach, control and transparency. Our global recruitment network, digital platforms and forensic insights strengthen universities’ presence in key and emerging markets, while our focus on student success supports academic and career achievement on campus.
                 </p>
-                <div className="why">WHY US?</div>
-                <div className="farmerrow">
-                    <img src="/images/farmers1.jpg" className="farmerimg"></img>
-                    <p className="para1">INTO partnerships empower universities to recruit international students with unparalleled reach, control and transparency. Our global recruitment network, digital platforms and forensic insights strengthen universities’ presence in key and emerging markets, while our focus on student success supports academic and career achievement on campus.</p>
+                <div className="whyAboutUs">WHY US?</div>
+                <div className="rowAboutUs">
+                    <img src="/images/farmers1.jpg" className="imgAboutUs"></img>
+                    <p className="paraAboutUs">INTO partnerships empower universities to recruit international students with unparalleled reach, control and transparency. Our global recruitment network, digital platforms and forensic insights strengthen universities’ presence in key and emerging markets, while our focus on student success supports academic and career achievement on campus.</p>
                 </div>
                 </div>
                 
