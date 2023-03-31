@@ -5,8 +5,7 @@ export default function item(props) {
 	return props.trigger ? (
 		<div className="mainItem">
 			<div className="whiteBoxItem">
-				
-				<div className="headingItem">Strawberry</div>
+				<div className="headingItem">{props.itemName}</div>
 				<div className="crossItem" onClick={() => props.setTrigger(false)}>X</div>
 				<div className="subHeadingItem">Frome Swadesh farm</div>
 				<div className="middleItem">

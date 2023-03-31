@@ -2,7 +2,7 @@ import React from 'react'
 import "./categories_card.css"
 
 const categories_card = ({name,add}) => {
-  console.log(name,add);
+  // console.log(name,add);
   return (
     <>
 		<div className='cardCategory'>
