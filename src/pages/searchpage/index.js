@@ -11,10 +11,13 @@ import item from "../../components/card/item";
 
 function Index() {
 	const [ItemPopup, setItemPopup] = useState(false);
+	const [ItemNo, setItemNo] = useState("Pranjal");
+	let itemNa ="";
 	return (
 		<>
 			<Navbar />
 			<div className="main2">
+				
 				<div className="box1"></div>
 				<div className="box2cat">
 					<div className="text1">Categories</div>
@@ -31,32 +34,31 @@ function Index() {
 							<div
 								onClick={() => {
 									setItemPopup(!ItemPopup);
-
-									console.log("ok", item.name);
+									itemNa = item.name;
+									setItemNo(itemNa);
+									console.log(">>>>>>>>>>>>>>>>>", itemNa);
 								}}
 							>
-
 								<Card2
 									name={item.name}
 									add={item.add}
 									seller={item.seller}
-									cost={item.cost} />
-
-								<Item
-									id="itmes"
-									trigger={ItemPopup}
-									setTrigger={setItemPopup}
-									itemName={item.name}
-									itemFrom={item.seller}
-									itemPrice={item.cost}
-									itemImgPath={item.add}
+									cost={item.cost}
 								/>
-
 							</div>
 						))}
 					</div>
 				</div>
-
+									
+				<Item
+					id="itmes"
+					trigger={ItemPopup}
+					setTrigger={setItemPopup}
+					itemName={ItemNo}
+					itemFrom={item.seller}
+					itemPrice={item.cost}
+					itemImgPath={item.add}
+				/>
 			</div>
 		</>
 	);

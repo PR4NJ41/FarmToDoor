@@ -2,7 +2,7 @@ import "./cart_card.css";
 import React from "react";
 
 const Card = ({ name, add, cost, quantity }) => {
-	console.log(name, add);
+	// console.log(name, add);
 	var itemcost=cost*quantity;
 	return (
 		<div className="rowcart">
