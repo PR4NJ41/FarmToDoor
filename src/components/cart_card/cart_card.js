@@ -6,9 +6,12 @@ const Card = ({ name, add, cost, quantity }) => {
 	var itemcost=cost*quantity;
 	return (
 		<div className="rowCartCard">
-			<img classname="imgCartCard" src={add}></img>
-			<p className="nameCartCard">{name}</p>
+			<div className="imgCartCard"><img src={add}></img><p className="nameCartCard">{name}</p></div>
+			<div className="row2CartCard">
+			<div className="minusbtnItem">-</div>
 			<text className="quantityCartCard">{quantity}</text>
+			<div className="plusbtnItem">+</div>
+			</div>
 			<text className="priceCartCard">{itemcost}</text>
 		</div>
 	);
