@@ -1,7 +1,7 @@
 [
     {
         "name": "Strawberry",
-		"seller": "Swadesh farm h bhai",
+		"seller": "Swadesh farm",
 		"cost": "350",
 		"add": "/images/strawberry.png"
     },
@@ -43,7 +43,7 @@
     },
     {
         "name": "Moong",
-		"seller": "Swadesh farm h bhai",
+		"seller": "Swadesh farm",
 		"cost": "102",
 		"add": "/images/strawberry.png"
     }
