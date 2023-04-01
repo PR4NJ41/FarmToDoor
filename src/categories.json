@@ -17,5 +17,9 @@
 {
     "name": "Seeds",
     "add": "/images/fruit.png"
+},
+{
+    "name": "Pulses",
+    "add": "/images/fruit.png"
 }
 ]

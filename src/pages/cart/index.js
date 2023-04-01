@@ -3,12 +3,13 @@ import "./index.css"
 import Navbar from "../../components/navbar/navbar";
 import Card from "../../components/cart_card/cart_card";
 import cart_data from "./../../cart.json";
+import { Link } from "react-router-dom";
 
 const index = () => {
-	var s=0;
-	cart_data.map((element)=>{
-		s+=Number(element.cost);
-	})
+	let s=0;
+	for(let i=0;i<cart_data.length;i++){
+		s+=Number(cart_data[i].cost)*Number(cart_data[i].quantity);
+	}
   return (
 	<>
 		<Navbar/>
@@ -26,11 +27,11 @@ const index = () => {
 					<Card name={element.name} add={element.add} cost={element.cost} quantity={element.quantity}/>
 				))}
 			</div>
+			<div className="rowCart1"><div className="colCart2">Total {'=>'} ₹</div>
+				<div className="colCart2">{s}</div></div>
 			<div className="rowCart">
-				<div className="CheckoutBtnCart">Checkout</div>
-				<div className="CheckoutBtnCart">Continue Shopping</div>
-				<div className="colCart">Total:-</div>
-				<div className="colCart">{s}</div>
+			<div className="discCart"><Link to="/searchpage" className="boxNavbar"> Continue Shopping</Link></div>
+			<div className="discCart"><Link to="/searchpage" className="boxNavbar"> Checkout</Link></div>
 			</div>
 		</div>
 

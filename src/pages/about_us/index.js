@@ -14,7 +14,7 @@ const about = () => {
                 </p>
                 <div className="whyAboutUs">WHY US?</div>
                 <div className="rowAboutUs">
-                    <img src="/images/farmers1.jpg" className="imgAboutUs"></img>
+                    <img src="/images/farmer.jpeg" className="imgAboutUs"></img>
                     <p className="paraAboutUs">INTO partnerships empower universities to recruit international students with unparalleled reach, control and transparency. Our global recruitment network, digital platforms and forensic insights strengthen universities’ presence in key and emerging markets, while our focus on student success supports academic and career achievement on campus.</p>
                 </div>
                 </div>

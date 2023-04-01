@@ -4,8 +4,9 @@
     flex-direction: row;
     height: 120px;
     background: #ECFADC;
+    /* background-color: #216f41; */
     margin: 0px;
-
+    border-radius: 10px;
     justify-content: right;
     align-items: center;
     padding-right: 200px;
@@ -21,4 +22,9 @@
     cursor: pointer;
     text-decoration: inherit;
     color: inherit;
+    display: flex;
+}
+.navimg{
+    height: 40px;
+    width: 40px;
 }
