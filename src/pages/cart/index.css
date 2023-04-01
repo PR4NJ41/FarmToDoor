@@ -1,22 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .lineCart{
-    height: 2px;
+    height: 1px;
     width: 80%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.336);
     margin-bottom: 2%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .txtCart{
     margin-left: 15%;
     font-size: 37px;
-    font-weight: 400;
+    font-weight: 500;
     font-family: "Montserrat";
+    color: rgba(0, 0, 0, 0.701);
 }
 .colCart{
     font-size: 24px;
     font-weight: 400;
     font-family: "Montserrat";
+    color: rgba(0, 0, 0, 0.701);
 }
 .rowCart{
     display: flex;
