@@ -61,10 +61,9 @@
  width: 40px;
  display: flex;
  cursor: pointer;
- margin-left: 0%;
- align-self: baseline;
- margin-top: 1%;
- margin-right: 0%;
+ margin-left: 10%;
+ align-self: center;
+
 }
 .priceCartCard{
     font-size: 20px;
