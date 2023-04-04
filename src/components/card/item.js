@@ -7,11 +7,11 @@ export default function item(props) {
 			<div className="whiteBoxItem">
 				<div className="headingItem">{props.itemName}</div>
 				<div className="crossItem" onClick={() => props.setTrigger(false)}>X</div>
-				<div className="subHeadingItem">Frome Swadesh farm</div>
+				<div className="subHeadingItem">{props.itemFrom}</div>
 				<div className="middleItem">
 					<img src={props.itemImgPath} className="imgItem" />
 					<div className="rightItem">
-						<div className="priceItem">Price : 20₹</div>
+						<div className="priceItem">Price : {props.itemPrice}</div>
 						<div className="discItem">Description</div>
 						<div className="paraItem">
 							Lorem, ipsum dolor sit amet consectetur adipisicing
