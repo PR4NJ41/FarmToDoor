@@ -12,6 +12,10 @@ import item from "../../components/card/item";
 function Index() {
 	const [ItemPopup, setItemPopup] = useState(false);
 	const [ItemNo, setItemNo] = useState("Pranjal");
+	const [ItemSeller, setItemSeller] = useState("");
+	const [ItemPrice, setItemPrice] = useState("");
+	const [ItemImgPath, setItemImgPath] = useState("");
+
 	return (
 		<>
 			<Navbar />
@@ -33,6 +37,9 @@ function Index() {
 								onClick={() => {
 									setItemPopup(!ItemPopup);
 									setItemNo(item.name);
+									setItemSeller(item.seller);
+									setItemPrice(item.cost);
+									setItemImgPath(item.add);
 								}}
 							>
 								<Card2
@@ -51,9 +58,9 @@ function Index() {
 					trigger={ItemPopup}
 					setTrigger={setItemPopup}
 					itemName={ItemNo}
-					itemFrom={item.seller}
-					itemPrice={item.cost}
-					itemImgPath={item.add}
+					itemFrom={ItemSeller}
+					itemPrice={ItemPrice}
+					itemImgPath={ItemImgPath}
 				/>
 			</div>
 		</>

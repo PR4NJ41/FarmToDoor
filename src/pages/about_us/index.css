@@ -24,6 +24,7 @@
     font-weight: 400;
     font-size: 80px;
     color: white;
+    margin-top: 100px;
 }
 .paraAboutUs{
     color:white;
@@ -47,6 +48,7 @@ background-color: rgba(0, 0, 0, 0.587);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 300px;
 }
 .imgAboutUs{
     height: 15rem;

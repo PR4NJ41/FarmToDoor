@@ -10,7 +10,7 @@ const Card = ({ name, add, cost, seller }) => {
 				<div className="txt1Card ">{name}</div>
 				<div className="txt2Card ">{seller}</div>
 				<div className="rowCard ">
-					<div className="txt3Card ">{cost + "₹"}<div className="txt4Card ">/per kg</div></div>
+					<div className="txt3Card ">{cost}<div className="txt4Card ">/per kg</div></div>
 					<img
 						alt="abc"
 						className="iconCard"

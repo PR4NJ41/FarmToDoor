@@ -6,7 +6,7 @@
     background: #ECFADC;
     /* background-color: #216f41; */
     margin: 0px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     justify-content: right;
     align-items: center;
     padding-right: 200px;
@@ -16,6 +16,7 @@
     color: #043517;
     font-family: 'Montserrat';
     gap: 51px;
+    border-bottom: 1px solid black;
 }
 
 .boxNavbar{
