@@ -5,19 +5,17 @@ import Navbar from "../../components/navbar/navbar";
 import Card1 from "../../components/categories_card/categories_card";
 import Card2 from "../../components/card/card";
 import { useState } from "react";
-import fruits from "./../../data.json";
-import categories from "./../../categories.json";
+import fruits from "../../data.json";
+import categories from "../../categories.json";
 import item from "../../components/card/item";
 
 function Index() {
 	const [ItemPopup, setItemPopup] = useState(false);
 	const [ItemNo, setItemNo] = useState("Pranjal");
-	let itemNa ="";
 	return (
 		<>
 			<Navbar />
 			<div className="mainSearch">
-				
 				<div className="box1Search"></div>
 				<div className="boxCatSearch">
 					<div className="txtSearch">Categories</div>
@@ -34,9 +32,7 @@ function Index() {
 							<div
 								onClick={() => {
 									setItemPopup(!ItemPopup);
-									itemNa = item.name;
-									setItemNo(itemNa);
-									console.log(">>>>>>>>>>>>>>>>>", itemNa);
+									setItemNo(item.name);
 								}}
 							>
 								<Card2
@@ -49,7 +45,7 @@ function Index() {
 						))}
 					</div>
 				</div>
-									
+
 				<Item
 					id="itmes"
 					trigger={ItemPopup}
