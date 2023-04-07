@@ -14,13 +14,7 @@ export default function item(props) {
 						<div className="priceItem">Price : {props.itemPrice}</div>
 						<div className="discItem">Description</div>
 						<div className="paraItem">
-							Lorem, ipsum dolor sit amet consectetur adipisicing
-							elit. Perspiciatis dolorum easapiente doloribus
-							alias itaque ipsa incidunt deserunt amet quod
-							praesentium, hic esse ut similique dolor molestias
-							dolore culpa nisi Lorem, ipsum dolor sit amet
-							consectetur adipisicing elit. Perslor molestias
-							dolore culpa nisi
+							{props.itemDes}
 						</div>
 					</div>
 				</div>
