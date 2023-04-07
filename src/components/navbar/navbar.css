@@ -1,31 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-.mainNavbar{
-    display: flex;
-    flex-direction: row;
-    height: 120px;
-    background: #ECFADC;
-    /* background-color: #216f41; */
-    margin: 0px;
-    /* border-radius: 10px; */
-    justify-content: right;
-    align-items: center;
-    padding-right: 200px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.mainNavbar {
+	display: flex;
+	flex-direction: row;
+	height: 75px;
+	/* background: #85e11b; */
+    /* background: #ff000000; */
+	background-color: #ecfadc;
+	/* background-color: #908f8f25; */
+    backdrop-filter: blur(5px);
+	margin: 0px;
+	/* border-radius: 10px; */
+	justify-content: right;
+	align-items: center;
+	padding-right: 5%;
 
-    font-size: 24px;
-    font-weight: bolder;
-    color: #043517;
-    font-family: 'Montserrat';
-    gap: 51px;
-    border-bottom: 1px solid black;
+	font-size: 24px;
+	font-weight: bolder;
+	color: #043517;
+	font-family: "Montserrat";
+	/* gap: 4px; */
+	border-bottom: 1px solid black;
+    z-index: 1234;
+}
+.rightnav{
+    margin-left: 20px;
+    z-index: 1234;
+
 }
 
-.boxNavbar{
-    cursor: pointer;
-    text-decoration: inherit;
-    color: inherit;
-    display: flex;
+.boxNavbar {
+	cursor: pointer;
+	text-decoration: inherit;
+	color: inherit;
+	display: flex;
+	border-radius: 8px;
+	/* background: ; */
+	border: 2px solid #ecfadc00;
+	width: auto;
+	padding: 12px 20px;
+	height: 25px;
+	align-items: center;
+    z-index: 1234;
+
 }
-.navimg{
-    height: 40px;
-    width: 40px;
+.boxNavbar:hover {
+	/* color: white; */
+	/* background: #043517; */
+    z-index: 1234;
+
+	border: 2px solid black;
+
+}
+.navimg {
+    z-index: 1234;
+	height: 40px;
+	width: 40px;
+}
+
+.googleSignInBtn {
+    z-index: 1234;
+	border: none;
+	/* color: white; */
+	color: #043517;
+	/* background-color: rgb(29, 108, 204); */
+	cursor: pointer;
+	padding: 10px 20px;
+	align-self: center;
+	font-size: 24px;
+	border-radius: 8px;
+	font-family: "Montserrat";
+	font-weight: bold;
+	background: #ecfadc;
+}
+
+.googleSignInBtn:hover {
+    z-index: 1234;
+	color: white;
+	background: rgb(73, 128, 195);
+}
+
+.profileImgNav {
+    position: relative;
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	border: 1px solid rgb(0, 0, 0);
+	cursor: pointer;
+    z-index: 1234;
+    padding: 0px;
+    border: none;
+	/* margin-left: 20px; */
+	/* background: #043517; */
+}
+
+.dropdown {
+    z-index: 1234;
+	position: absolute;
+	right: 20px;
+	flex-direction: column;
+    z-index: 1234;
+	font-size: 20px;
+	padding: 0px;
+	z-index: 50000000;
+	padding-top: 20px;
+	top: 83px;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 150ms ease-in-out;
+    transform: translateY(-10px);
+}
+
+.ok1 {
+	display: flex;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px;
+	border: 1px solid rgba(27, 31, 35, 0.15);
+	padding: 10px 20px;
+	border-radius: 12px 12px 0px 0px;
+    z-index: 1234;
+	border-bottom: none;
+	background-color: white;
+	cursor: default;
+    color: rgb(86, 86, 86);
+    font-weight: 500;
+	
+}
+.ok2 {
+	display: flex;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px;
+	border: 1px solid rgba(27, 31, 35, 0.15);
+	/* border-top: none; */
+	padding: 10px 20px;
+	border-radius: 0px 0px 12px 12px;
+	background-color: white;
+	cursor: pointer;
+    font-weight: 500;
+    z-index: 1234;
+    color: rgb(86, 86, 86);
+    pointer-events: auto;
+}
+/* 
+.rightnav:hover .dropdown {
+	display: block;
+
+} */
+.ok2:hover {
+	background-color: rgb(255, 137, 137);
+    z-index: 1234;
+    color: white;
+	cursor: pointer;
+    pointer-events: auto;
+
+}
+.rightnav > .profileImgNav:focus + .dropdown{
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 1234;
+    pointer-events: auto;
 }

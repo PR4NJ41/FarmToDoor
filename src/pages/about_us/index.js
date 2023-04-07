@@ -5,9 +5,9 @@ import Navbar from "../../components/navbar/navbar";
 const about = () => {
 	return (
 		<div>
-			<Navbar className="nave" />
 			<div className="mainAboutUs">
-				<div className="blackAboutUs">
+			<div className="blackAboutUs">
+					<Navbar className="nave" color="#6ab860" bgcolor="#908f8f25"/>
 					<div className="headingAboutUs">ABOUT US</div>
 					<p className="paraAboutUs">
 						INTO partnerships empower universities to recruit
