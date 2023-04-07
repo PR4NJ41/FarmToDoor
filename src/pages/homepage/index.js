@@ -15,6 +15,7 @@ const index = () => {
 					<br />
 					Your Door
 				</h1>
+				
 				<div className="searchBoxContainerHome">
 					<input
 						className="searchBoxHome"

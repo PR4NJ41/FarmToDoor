@@ -18,7 +18,7 @@ function Index() {
 
 	return (
 		<>
-			<Navbar />
+			<Navbar bgcolor="#6ab860"/>
 			<div className="mainSearch">
 				<div className="box1Search"></div>
 				<div className="boxCatSearch">
