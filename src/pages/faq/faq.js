@@ -94,7 +94,7 @@ function Faqq() {
 			id="header"
 			ref_container={useRef}
 		>
-			<Navbar/>
+			<Navbar bgcolor="#038bd4a9" color="white"/>
 			<div className="heas">
 				<div>
 					<h2 className="heading">FAQ</h2>

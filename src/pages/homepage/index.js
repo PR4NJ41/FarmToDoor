@@ -32,7 +32,6 @@ const index = () => {
 				 <img className="imgHome" src="/images/ellipse.svg" alt="Ellipse" />
  				<img className="scooterHome" src="/images/scooter3.svg" alt="Scooter" />  
 				*/}
-
 						<img
 							className="imgHome"
 							src="/images/final.svg"
