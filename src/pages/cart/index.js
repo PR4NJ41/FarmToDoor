@@ -14,7 +14,7 @@ const index = () => {
 		<>
 			<Navbar />
 			<div className="mainSearch">
-				<text className="txtCart">My Cart</text>
+				<div className="txtCart">{localStorage.getItem("userName")}'s Cart</div>
 				<div className="lineCart"></div>
 				<div className="rowCart">
 					<text className="colCart">Product Name</text>
