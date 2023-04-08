@@ -1,93 +1,142 @@
-.addSeller{
-    display: flex;
-    flex-direction: column;
-    top: 255px;
-    position: absolute;
-    /* margin-left: 30px; */
-    background-color: white;
-    height: 800px;
-    width: 80vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    border-radius: 40px;
+.addSeller {
+	display: flex;
+	flex-direction: column;
+	top: 150px;
+	position: relative;
+	/* margin-left: 30px; */
+	background-color: white;
+	height: auto;
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	border-radius: 40px;
+	padding-bottom: 20px;
+	margin-bottom: 400px;
+	padding-top: 40px;
+	z-index: 0;
 }
-.imgSeller{
-    top: 0px;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("/public/images/seller.webp");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
+.imgSeller {
+	top: 0px;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("/public/images/seller.webp");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
 }
-.add{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.add {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
+    margin-bottom: 20px;
 }
-.txtSeller{
-    font-family: "Montserrat";
+.txtSeller {
+	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 35px;
+	text-align: center;
 	letter-spacing: -0.045em;
 	color: #000000;
 	padding-top: 20px;
 	margin-left: 50px;
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
-.currentSeller{
-height: 800px;
-scroll-behavior: smooth;
-color: white;
-width: 80vw;
-margin-left: 10vw;
-margin-right: 10vw;
-top: 1100px;
-position: absolute;
-display: flex;
-flex-direction: column;
+.currentSeller {
+	height: 800px;
+	scroll-behavior: smooth;
+	color: white;
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	top: 1100px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
 }
-.currentSellerSearch{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.currentSellerSearch {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
-.txtSeller2{
-    font-family: "Montserrat";
+.txtSeller2 {
+	font-family: "Montserrat";
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 20px;
 	color: #000000;
 	padding-top: 20px;
 	margin-left: 50px;
-    padding-bottom: 10px;
+	padding-bottom: 10px;
+	margin-top: 20px;
 }
-.inputSeller , #category , #add{
-    margin-left: 40px;
+.inputSeller,
+#category,
+#add {
+	margin-left: 50px;
+	border: 2px solid rgba(128, 128, 128, 0.262);
+	margin-right: 50px;
+	line-height: 1.5rem;
+	font-size: 18px;
+	padding: 10px 20px;
+	font-weight: 400;
+	border-radius: 12px;
 }
-#add{
-    width: 179px;
-    height: 66px;
-    background: #216f41;
-    border: none;
-    border-radius: 39px;
-    /* display: absolute; */
-    margin-top: 40px;
-    margin-left: 40px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: -0.025em;
-    color: white;
-    cursor: pointer;
+#add {
+	width: 179px;
+	height: 45px;
+	background: #3287bf;
+	border: none;
+	border-radius: 20px;
+	/* display: absolute; */
+	margin-top: 40px;
+	margin-left: 40px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    align-self: center;
+	letter-spacing: -0.025em;
+	color: white;
+	cursor: pointer;
+}
+
+.container {
+    margin-left: 50px;
+    /* background-color: #3287bf; */
+}
+.upload-box {
+	font-size: 16px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 1px 0px black;
+	width: 550px;
+	outline: none;
+    padding-right: 20px;
+}
+
+::-webkit-file-upload-button {
+	color: white;
+	background: #3287bf;
+	padding: 13px;
+    margin-right: 20px;
+	border: none;
+	border-radius: 0px;
+	outline: none;
+}
+::-webkit-file-upload-button:hover {
+    background: #3287bfc6;
+}
+
+#add:hover {
+    background: #3287bfc6;
+    color:white;
 }

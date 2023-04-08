@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import Navbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
 
 const about = () => {
 	return (
@@ -36,6 +37,7 @@ const about = () => {
 					</div>
 				</div>
 			</div>
+			<Footer/>
 		</div>
 	);
 };

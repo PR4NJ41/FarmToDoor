@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/navbar";
 import Card from "../../components/cart_card/cart_card";
 import cart_data from "./../../cart.json";
 import { Link } from "react-router-dom";
+import Footer from "../../components/footer/footer";
 
 const index = () => {
 	let s = 0;
@@ -11,7 +12,7 @@ const index = () => {
 		s += Number(cart_data[i].cost) * Number(cart_data[i].quantity);
 	}
 	return (
-		<>
+		<div className="mainCart">
 			<Navbar />
 			<div className="mainSearch">
 				<div className="txtCart">{localStorage.getItem("userName")}'s Cart</div>
@@ -45,7 +46,8 @@ const index = () => {
 					</Link>
 				</div>
 			</div>
-		</>
+			<Footer/>
+		</div>
 	);
 };
 
