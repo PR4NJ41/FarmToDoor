@@ -61,7 +61,7 @@ function Navbar(props) {
 				<Link to="/faq" className="boxNavbar">
 					FAQ
 				</Link>
-				<Link to="/" className="boxNavbar">
+				<Link to="/seller" className="boxNavbar">
 					Sell
 				</Link>
 				<Link to="/buy" className="boxNavbar">

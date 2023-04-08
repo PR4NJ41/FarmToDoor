@@ -1,0 +1,93 @@
+.addSeller{
+    display: flex;
+    flex-direction: column;
+    top: 255px;
+    position: absolute;
+    /* margin-left: 30px; */
+    background-color: white;
+    height: 800px;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 40px;
+}
+.imgSeller{
+    top: 0px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/public/images/seller.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+}
+.add{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.txtSeller{
+    font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 35px;
+	letter-spacing: -0.045em;
+	color: #000000;
+	padding-top: 20px;
+	margin-left: 50px;
+    padding-bottom: 10px;
+}
+.currentSeller{
+height: 800px;
+scroll-behavior: smooth;
+color: white;
+width: 80vw;
+margin-left: 10vw;
+margin-right: 10vw;
+top: 1100px;
+position: absolute;
+display: flex;
+flex-direction: column;
+}
+.currentSellerSearch{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.txtSeller2{
+    font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color: #000000;
+	padding-top: 20px;
+	margin-left: 50px;
+    padding-bottom: 10px;
+}
+.inputSeller , #category , #add{
+    margin-left: 40px;
+}
+#add{
+    width: 179px;
+    height: 66px;
+    background: #216f41;
+    border: none;
+    border-radius: 39px;
+    /* display: absolute; */
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.025em;
+    color: white;
+    cursor: pointer;
+}

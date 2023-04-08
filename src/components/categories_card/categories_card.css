@@ -11,6 +11,7 @@ justify-content: space-around;
 margin: 43px;
 padding: 24px 24px 24px 24px;
 z-index: 500;
+cursor: pointer;
 }
 .txtCategory{
 font-family: 'Inter';
