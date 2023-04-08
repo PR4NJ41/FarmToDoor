@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import Navbar from "../../components/navbar/navbar";
 import { Link } from "react-router-dom";
+import Footer from "../../components/footer/footer";
 
 const index = () => {
 	return (
@@ -32,16 +33,17 @@ const index = () => {
 				 <img className="imgHome" src="/images/ellipse.svg" alt="Ellipse" />
  				<img className="scooterHome" src="/images/scooter3.svg" alt="Scooter" />  
 				*/}
-						<img
+						{/* <img
 							className="imgHome"
 							src="/images/final.svg"
 							alt="scooter"
 						/>
 					<svg>
 						<image xlinkHref="/images/final.svg"></image>
-					</svg>
+					</svg> */}
 				</div>
 			</div>
+			<Footer/>
 		</>
 	);
 };

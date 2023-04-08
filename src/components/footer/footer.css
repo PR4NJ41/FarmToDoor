@@ -1,0 +1,68 @@
+.mainfooter{
+    padding: 40px;
+    padding-right: 40px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    border-top: 30px;
+    height: 300px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.contFooter{
+    margin-top: 30px;
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    justify-content: space-between;
+}
+.greenBoxFooter{
+    background: radial-gradient(
+		50% 50% at 50% 50%,
+		rgba(85, 183, 73, 0.82) 0%,
+		#339d36 100%
+	);
+    height: 20px;
+    width: 4px;
+    margin-right: 5px;
+}
+.elemnFooter{
+display: flex;
+margin-top: 30px;
+}
+.iconFooter{
+height: 30px;
+width: 30px;
+margin-right: 15px;
+}
+.linesFooter{
+display: flex;
+flex-direction: column;
+}
+.txtFooter{
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+}
+.txt2Footer{
+    font-size: 16px;
+    color: black;
+}
+.txt3Footer{
+font-weight: 800;
+color: grey;
+}
+.thankFooter{
+margin-top: 80px;
+width: 33%;
+height: 60%;
+}
+.logoFooter{
+    width: 300px;
+    height: 300px;
+}
+.linkfooter{
+    text-decoration: inherit;
+}
