@@ -5,6 +5,7 @@ import { Data } from "./data";
 import { Fade } from "react-reveal";
 import "./faq.css";
 import Navbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
 
 const MySection = styled.div`
 flex-direction: column;
@@ -179,9 +180,8 @@ function Faqq() {
 				</MySection>
 			</IconContext.Provider>
 			<div>
-				{/*
-                 <Footer /> 
-                */}
+                 <Footer/> 
+                
 			</div>
 		</div>
 	);

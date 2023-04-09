@@ -12,6 +12,7 @@ import item from "../../components/card/item";
 import {db} from '../../firebase'
 import {collection, getDocs} from 'firebase/firestore'
 import { query, orderBy } from "firebase/firestore";  
+import Footer from "../../components/footer/footer";
 
 function Index() {
 	const [ItemPopup, setItemPopup] = useState(false);
@@ -20,12 +21,14 @@ function Index() {
 	const [ItemPrice, setItemPrice] = useState("");
 	const [ItemImgPath, setItemImgPath] = useState("");
 	const [ItemDes, setItemDes] = useState("");
-
+    
+	const [Category,setCategory] = useState("");
 	const prodCollectionRef = collection(db, "Products");
 	const categCollectionRef = collection(db, "Categories");
 	const q = query(categCollectionRef,orderBy("name"))
 	const q2 = query(prodCollectionRef,orderBy("name"))
 	const [Prod,setProd] = useState([]); 
+	const [Prod2,setProd2]= useState([]);
 	const [Categ,setCateg] = useState([]); 
 
 	useEffect(() => {
@@ -38,11 +41,16 @@ function Index() {
 			const cdata = await getDocs(q);
 			setCateg(cdata.docs.map((cdoc)=>({...cdoc.data(),id:cdoc.id})));
 			console.log(cdata);
+
 		};
+		
 		getCateg();
 		getProd();
 
 	}, [])
+	const getProd2 = async(Category) => {
+		setProd2(Prod.filter(doc=>doc.category===Category));
+	}
 	
 
 	return (
@@ -54,7 +62,14 @@ function Index() {
 					<div className="txtSearch">Categories</div>
 					<div className="box3Search">
 						{Categ.map((item) => (
-							<Card1 name={item.name} add={item.token2}/>
+							<div 
+							 onClick={()=>{
+								setCategory(item.name);
+								getProd2(item.name);
+								
+							 }}>
+								<Card1 name={item.name} add={item.token2}/>
+								</div>
 						))}
 					</div>
 				</div>
@@ -62,7 +77,7 @@ function Index() {
 				<div className="boxProSearch">
 					<div className="txtSearch">Popular Products</div>
 					<div className="box3Search">
-						{Prod.map((item) => (
+						{((Category!="")?Prod2:Prod).map((item) => (
 							<div
 								onClick={() => {
 									setItemPopup(!ItemPopup);
@@ -82,6 +97,7 @@ function Index() {
 							</div>
 						))}
 					</div>
+					<Footer/>
 				</div>
 
 				<Item
@@ -95,6 +111,7 @@ function Index() {
 					itemDes={ItemDes}
 					// itemPath={ItemPat2}
 				/>
+				
 			</div>
 		</>
 	);

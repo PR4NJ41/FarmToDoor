@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/navbar";
 import Card from "../../components/cart_card/cart_card";
 import cart_data from "./../../cart.json";
 import { Link } from "react-router-dom";
+import Footer from "../../components/footer/footer";
 
 const index = () => {
 	let s = 0;
@@ -45,6 +46,7 @@ const index = () => {
 					</Link>
 				</div>
 			</div>
+			<Footer/> 
 		</>
 	);
 };

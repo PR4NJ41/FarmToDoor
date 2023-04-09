@@ -4,6 +4,7 @@ import "./index.css";
 import Navbar from "../../components/navbar/navbar";
 import data from "../../data.json";
 import Card2 from "../../components/card/card";
+import Footer from "../../components/footer/footer";
 const about = () => {
     return (
             <div><div className="imgSeller"></div><Navbar color="#6ab860" bgcolor="#908f8f25" />
@@ -47,6 +48,7 @@ const about = () => {
                         ))}
                     </div>
                 </div>
+                <Footer/> 
             </div>
 
     );
