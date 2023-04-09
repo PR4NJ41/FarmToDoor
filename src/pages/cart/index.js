@@ -12,7 +12,7 @@ const index = () => {
 		s += Number(cart_data[i].cost) * Number(cart_data[i].quantity);
 	}
 	return (
-		<>
+		<div className="mainCart">
 			<Navbar />
 			<div className="mainSearch">
 				<div className="txtCart">{localStorage.getItem("userName")}'s Cart</div>
@@ -46,8 +46,8 @@ const index = () => {
 					</Link>
 				</div>
 			</div>
-			<Footer/> 
-		</>
+			<Footer/>
+		</div>
 	);
 };
 
