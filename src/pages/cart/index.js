@@ -1,12 +1,20 @@
 import React from "react";
 import "./index.css";
 import Navbar from "../../components/navbar/navbar";
-import Card from "../../components/cart_card/cart_card";
 import cart_data from "./../../cart.json";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer/footer";
+import { useCart } from 'react-use-cart';
 
-const index = () => {
+function Index(){
+	const {
+        isEmpty,
+        items,
+        cartTotal,
+        updateItemQuantity,
+        removeItem,
+        emptyCart,
+    } = useCart();
 	let s = 0;
 	for (let i = 0; i < cart_data.length; i++) {
 		s += Number(cart_data[i].cost) * Number(cart_data[i].quantity);
@@ -24,18 +32,22 @@ const index = () => {
 				</div>
 				<div className="lineCart"></div>
 				<div className="itemsCart">
-					{cart_data.map((element) => (
-						<Card
-							name={element.name}
-							add={element.add}
-							cost={element.cost}
-							quantity={element.quantity}
-						/>
+					{items.map((element,index) => (
+						<div className="rowCartCard">
+							<div className="imgCartCard"><img src={element.token}></img><p className="nameCartCard2">{element.name}</p></div>
+							<div className="row2CartCard">
+							<div className="minusbtnItem" onClick={()=> updateItemQuantity(element.id, element.quantity - 1)}>-</div>
+							<text className="quantityCartCard">{element.quantity}</text>
+							<div className="plusbtnItem" onClick={()=> updateItemQuantity(element.id, element.quantity + 1)}>+</div>
+							</div>
+							<text className="priceCartCard" >{element.price}</text>
+							<div className="crossCartCard" onClick={()=> removeItem(element.id)}><img src="/images/cross.svg"></img></div>
+						</div>
 					))}
 				</div>
 				<div className="rowCart1">
 					<div className="colCart2">Total {"➤"} ₹</div>
-					<div className="colCart2">{s}</div>
+					<div className="colCart2">{cartTotal}</div>
 				</div>
 				<div className="rowCart">
 					<Link to="/buy" className="boxNavbar">
@@ -51,4 +63,4 @@ const index = () => {
 	);
 };
 
-export default index;
+export default Index;
