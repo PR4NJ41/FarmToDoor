@@ -179,7 +179,9 @@ function Faqq() {
 					</Container>
 				</MySection>
 			</IconContext.Provider>
+
 			<Footer/>
+
 		</div>
 	);
 }
