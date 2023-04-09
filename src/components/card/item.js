@@ -1,7 +1,15 @@
 import React from "react";
 import "./item.css";
+import {useCart} from "react-use-cart"
 
-export default function item(props) {
+function Item(props){
+	const { addItem } = useCart();
+	const addToCart = () =>{
+        addItem(props.kela);
+    }
+	
+
+
 	return props.trigger ? (
 		<div className="mainItem">
 			<div className="whiteBoxItem">
@@ -30,10 +38,10 @@ export default function item(props) {
 					</div>
 					<div className="rightButtonItem">
 						<button
-							onClick={() => props.setTrigger(false)}
+						onClick={()=> addToCart()}
 							className="closeBtnItem"
 						>
-							Add to Cart
+							Add to CartCheck
 						</button>
 					</div>
 				</div>
@@ -49,3 +57,6 @@ export default function item(props) {
 		""
 	);
 }
+
+
+export default Item;

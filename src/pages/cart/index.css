@@ -85,3 +85,95 @@
 .itemsCart{
     margin-top: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.rowCartCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 24px  rgba(0, 0, 0, 0.1);;
+    padding-left: 0%;
+    padding-right: 1%;
+}
+.imgCartCard{
+    height: 100px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 13%;
+}
+.nameCartCard2{
+    font-weight: 400;
+    font-size: 15;
+    font-family: "Montserrat";
+    margin:0px;
+}
+.row2CartCard{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+ margin-left: 25%;
+}
+.plusbtnItem,
+.minusbtnItem {
+	background: #49c074;
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+    margin: 10px;
+}
+.crossCartCard{
+ height: 20px;
+ width: 40px;
+ display: flex;
+ cursor: pointer;
+ margin-left: 10%;
+ align-self: center;
+
+}
+.priceCartCard{
+    font-size: 20px;
+    margin-left: 20%;
+    
+}
+.quantityCartCard{
+    font-size: 20px;
+}

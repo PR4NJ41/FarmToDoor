@@ -32,6 +32,20 @@ function Index() {
 	const [Prod,setProd] = useState([]); 
 	const [Prod2,setProd2]= useState([]);
 	const [Categ,setCateg] = useState([]); 
+	const [pranjal,setPranjal] = useState([]);
+
+
+
+	const product = {
+		id: 'kela',
+		name: 'Fresh Foam 1080v9',
+		brand: 'New Balance',
+		color: 'Neon Emerald with Dark Neptune',
+		size: 'US 9',
+		width: 'B - Standard',
+		sku: 'W1080LN9',
+		price: 15000
+	}
 
 	useEffect(() => {
 		const getProd = async () => {
@@ -92,13 +106,16 @@ function Index() {
 									setItemPrice(item.cost);
 									setItemImgPath(item.token);
 									setItemDes(item.description);
+									setPranjal(item);
 								}}
 							>
 								<Card2
 									name={item.name}
 									add={item.token}
 									seller={item.seller}
-									cost={item.cost}
+									cost={item.price}
+									item={item}
+									id = {item.cost}
 								/>
 							</div>
 						))}
@@ -107,7 +124,7 @@ function Index() {
 				</div>
 
 				<Item
-					id="itmes"
+					id={item.cost}
 					trigger={ItemPopup}
 					setTrigger={setItemPopup}
 					itemName={ItemNo}
@@ -115,6 +132,7 @@ function Index() {
 					itemPrice={ItemPrice}
 					itemImgPath={ItemImgPath}
 					itemDes={ItemDes}
+					kela = {pranjal}
 					// itemPath={ItemPat2}
 				/>
 				
