@@ -78,7 +78,7 @@ function Index() {
 		<div>
 			<Navbar bgcolor="#6ab860"/>
 			<div className="mainSearch">
-				<div className="box1Search"></div>
+				<div className="box1Search"><img src="/images/basket.svg"></img><div className="eatSell">EAT FRESH AND STAY HEALTHY</div></div>
 				<div className="rowBuy1"><img className="imgSearchBuy" src="/images/search.svg"></img>
 				<input className="searchBuy" type="text" 
 				onChange={(e)=>
@@ -129,8 +129,9 @@ function Index() {
 							</div>
 
 						))}
-						<Footer/>
 					</div>
+					<Footer/>
+
 				</div>
 
 				<Item

@@ -20,6 +20,16 @@
 		#6ab860 100%
 	);
     z-index: -232323423;
+	display: flex;
+	
+}
+.eatSell{
+	color:  white;
+	font-weight: 300;
+	margin-top: 200px;
+	font-size: 60px;
+	text-align: justify;
+	font-family: "Montserrat";
 }
 .boxCatSearch {
 	top: 532px;
