@@ -75,8 +75,7 @@ function Navbar(props) {
 					Sell
 				</Link>
 				<Link to='/buy' className="boxNavbar">
-				<img className="navimg" src="/images/search.svg"></img>
-				 {(location.pathname === '/buy')?<input className="searchNav" onChange={(e)=>setKeyword(e.target.value)} type="text"></input>:<div></div>}
+					Buy
 				</Link>
 
 				<Link to="/cart" className="boxNavbar">

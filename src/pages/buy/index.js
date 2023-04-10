@@ -5,9 +5,9 @@ import Navbar from "../../components/navbar/navbar";
 import Card1 from "../../components/categories_card/categories_card";
 import Card2 from "../../components/card/card";
 import { useState } from "react";
-import fruits from "../../data.json";
+// import fruits from "../../data.json";
 import { useEffect } from "react";
-import categories from "../../categories.json";
+// import categories from "../../categories.json";
 import item from "../../components/card/item";
 import { db } from "../../firebase";
 import { collection, getDocs } from "firebase/firestore";
@@ -33,7 +33,7 @@ function Index() {
 	const [Prod2,setProd2]= useState([]);
 	const [Categ,setCateg] = useState([]); 
 	const [pranjal,setPranjal] = useState([]);
-
+	const[SearchKeyword,setSearchKeyword] = useState("");
 
 
 	const product = {
@@ -46,7 +46,7 @@ function Index() {
 		sku: 'W1080LN9',
 		price: 15000
 	}
-
+    
 	useEffect(() => {
 		const getProd = async () => {
 			const data = await getDocs(q2);
@@ -70,12 +70,20 @@ function Index() {
 	const getProd2 = async(Category) => {
 		setProd2(Prod.filter(doc=>doc.category===Category));
 	}
-	
+	const getProd21=async(name) => {
+		setProd2(Prod.filter(doc=>doc.name.toLowerCase()===name.toLowerCase()));
+	}
 	return (
 		<div>
 			<Navbar bgcolor="#6ab860" />
 			<div className="mainSearch">
 				<div className="box1Search"></div>
+				<div className="rowBuy1"><img className="imgSearchBuy" src="/images/search.svg"></img>
+				<input className="searchBuy" type="text" 
+				onChange={(e)=>
+					{setSearchKeyword(e.target.value);
+				       getProd21(e.target.value);
+				}}></input></div>
 				<div className="boxCatSearch">
 					<div className="txtSearch">Categories</div>
 					<div className="box3Search">
@@ -97,7 +105,7 @@ function Index() {
 				<div className="boxProSearch">
 					<div className="txtSearch">Popular Products</div>
 					<div className="box3Search">
-						{((Category!="")?Prod2:Prod).map((item) => (
+						{(((Category!="" || SearchKeyword!=""))?Prod2:Prod).map((item) => (
 							<div
 								onClick={() => {
 									setItemPopup(!ItemPopup);
@@ -135,7 +143,6 @@ function Index() {
 					kela = {pranjal}
 					// itemPath={ItemPat2}
 				/>
-				
 			</div>
 		</div>
 	);

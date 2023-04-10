@@ -76,3 +76,24 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+.searchBuy{
+	border-radius: 10px;
+	border-color: rgb(153, 149, 149);
+	border-width: .1px;
+	height: 25px;
+	width: 300px;
+}
+.imgSearchBuy{
+	height: 40px;
+	width: 40px;
+	display: inline;
+	cursor: pointer;
+}
+.rowBuy1{
+	position: absolute;
+	top: 450px;
+	display: flex;
+	flex-direction: horizontal;
+	align-items: center;
+	margin-left: 38%;
+}
