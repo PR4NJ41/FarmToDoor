@@ -8,7 +8,7 @@ const about = () => {
 		<div>
 			<div className="mainAboutUs">
 			<div className="blackAboutUs">
-					<Navbar className="nave" color="#6ab860" bgcolor="#908f8f25"/>
+					<Navbar className="nave" bgcolor="#908f8f25"/>
 					<div className="headingAboutUs">ABOUT US</div>
 					<p className="paraAboutUs">
 						INTO partnerships empower universities to recruit

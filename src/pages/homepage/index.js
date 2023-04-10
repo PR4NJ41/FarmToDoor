@@ -7,7 +7,7 @@ import Footer from "../../components/footer/footer";
 const index = () => {
 	return (
 		<>
-			<Navbar />
+			<Navbar bgcolor="#6ab860"/>
 			<div className="mainHome">
 				<h1 className="headingHome">
 					Locally Produced
@@ -20,7 +20,7 @@ const index = () => {
 				<div className="searchBoxContainerHome">
 					<input
 						className="searchBoxHome"
-						placeholder="Enter address to find nearby shops"
+						placeholder="Enter your pincode to start buying"
 					/>
 					<Link to="/buy">
 						<button className="searchBoxButtonHome">

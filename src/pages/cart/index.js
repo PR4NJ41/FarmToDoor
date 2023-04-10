@@ -21,7 +21,7 @@ function Index(){
 	}
 	return (
 		<div className="mainCart">
-			<Navbar />
+			<Navbar bgcolor="#6ab860"/>
 			<div className="mainSearch">
 				<div className="txtCart">{localStorage.getItem("userName")}'s Cart</div>
 				<div className="lineCart"></div>

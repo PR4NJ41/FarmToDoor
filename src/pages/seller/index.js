@@ -10,7 +10,7 @@ const about = () => {
 		<div>
         
 			<div className="imgSeller"></div>
-			<Navbar color="#6ab860" bgcolor="#908f8f25" />
+			<Navbar bgcolor="#908f8f25" />
 			<div className="addSeller">
 				<div className="txtSeller"> Add Product For Selling</div>
 				<form className="add">

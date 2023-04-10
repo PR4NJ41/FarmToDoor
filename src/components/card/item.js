@@ -41,7 +41,7 @@ function Item(props){
 						onClick={()=> addToCart()}
 							className="closeBtnItem"
 						>
-							Add to CartCheck
+							Add to Cart
 						</button>
 					</div>
 				</div>

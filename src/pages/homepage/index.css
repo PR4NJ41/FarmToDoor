@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .mainHome{
-    background: #ecfadc;
+    /* background: #ecfadc; */
     margin: 0px;
     width: 100%;
     height: 100vh;
@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 .headingHome {
-    color: #155e33;
+    color: #249d13;
     margin: 0px;
     font-size: 75px;
     font-weight: 700;
@@ -37,7 +37,7 @@
     flex-direction: row;
 
     background: #fffefe;
-    border: 3px solid #216f41;
+    border: 3px solid #249d13;
     border-radius: 100px;
     margin-left: 181px;
     font-size: 20px;
@@ -48,7 +48,7 @@
 .searchBoxButtonHome {
     width: 179px;
     height: 66px;
-    background: #216f41;
+    background: #249d13;
     border: none;
     border-radius: 39px;
     /* display: absolute; */

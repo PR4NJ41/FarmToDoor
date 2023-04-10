@@ -75,7 +75,7 @@ function Index() {
 	}
 	return (
 		<div>
-			<Navbar bgcolor="#6ab860" />
+			<Navbar bgcolor="#6ab860"/>
 			<div className="mainSearch">
 				<div className="box1Search"></div>
 				<div className="rowBuy1"><img className="imgSearchBuy" src="/images/search.svg"></img>
