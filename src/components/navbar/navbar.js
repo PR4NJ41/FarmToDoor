@@ -5,9 +5,17 @@ import { auth, provider } from "../../firebase";
 import { signInWithPopup } from "firebase/auth";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useLocation } from 'react-router-dom';
+
 
 function Navbar(props) {
+     
+	const location = useLocation();
+
 	let colour = props.color;
+    const [Keyword,setKeyword] = useState("");
+    const [SearchKeyword,setSearchKeyword] = useState("");
+
 	const [value, setValue] = useState("");
 	const SignInWithGoogle = () => {
 		signInWithPopup(auth, provider)
@@ -49,6 +57,13 @@ function Navbar(props) {
 			});
 	});
 
+	const handleSearch = (event)=>{
+		localStorage.setItem("searchKeyword",Keyword);
+		setSearchKeyword(localStorage.getItem("searchKeyword"));
+		console.log(SearchKeyword);
+		window.location.reload();
+	};
+
 	return (
 		<>
 			<div className="mainNavbar" style={{backgroundColor: props.bgcolor, color:props.color}}>
@@ -64,9 +79,11 @@ function Navbar(props) {
 				<Link to="/seller" className="boxNavbar">
 					Sell
 				</Link>
-				<Link to="/buy" className="boxNavbar">
-					<img className="navimg" src="/images/search.svg"></img>
+				<Link to='/buy' className="boxNavbar">
+				<img className="navimg" src="/images/search.svg" onClick={handleSearch}></img>
+				 {(location.pathname === '/buy')?<input className="searchNav" onChange={(e)=>setKeyword(e.target.value)} type="text"></input>:<div></div>}
 				</Link>
+
 				<Link to="/cart" className="boxNavbar">
 					<img className="navimg" src="/images/cart.svg"></img>
 				</Link>
