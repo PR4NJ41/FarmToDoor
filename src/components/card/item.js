@@ -13,9 +13,10 @@ function Item(props){
 	}
 	const { addItem } = useCart();
 	const addToCart = () =>{
+		alert("Item added to cart");
         addItem(props.master,Number(Quantity));
     }
-	
+	console.log(props.master.itemPrice);
 
 
 	return props.trigger ? (

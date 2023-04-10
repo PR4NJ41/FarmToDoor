@@ -73,6 +73,7 @@ function Index() {
 	const getProd21=async(name) => {
 		setProd2(Prod.filter(doc=>doc.name.toLowerCase()===name.toLowerCase()));
 	}
+	// console.log(ItemPrice);
 	return (
 		<div>
 			<Navbar bgcolor="#6ab860"/>

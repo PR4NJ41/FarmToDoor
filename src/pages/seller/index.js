@@ -32,6 +32,7 @@ const about = () => {
 						type="number"
 						id="cost"
 						name="cost"
+						placeholder="Enter Cost of product(per kg)"
 					></input>
 					<label className="txtSeller2" for="pincode">
 						Pincode of seller
@@ -41,15 +42,7 @@ const about = () => {
 						type="number"
 						id="pincode"
 						name="pincode"
-					></input>
-					<label className="txtSeller2" for="cost">
-						Cost of product(per kg)
-					</label>
-					<input
-						className="inputSeller"
-						type="number"
-						id="cost"
-						name="cost"
+						placeholder="Enter Pincode of seller"
 					></input>
 					<label className="txtSeller2" for="desc">
 						Description of product:
@@ -59,6 +52,7 @@ const about = () => {
 						type="text"
 						id="desc"
 						name="desc"
+						placeholder="Enter Description of product"
 					></input>
 					<label className="txtSeller2" for="sname">
 						Seller Name
@@ -68,6 +62,7 @@ const about = () => {
 						type="sname"
 						id="sname"
 						name="sname"
+						placeholder="Enter Seller Name"
 					></input>
 					<label className="txtSeller2" for="image">
 						Product Image

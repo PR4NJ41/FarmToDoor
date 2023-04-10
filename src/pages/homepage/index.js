@@ -21,6 +21,7 @@ const index = () => {
 					<input
 						className="searchBoxHome"
 						placeholder="Enter your pincode to start buying"
+						type="number"
 					/>
 					<Link to="/buy">
 						<button className="searchBoxButtonHome">

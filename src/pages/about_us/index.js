@@ -7,17 +7,16 @@ const about = () => {
 	return (
 		<div>
 			<div className="mainAboutUs">
-			<div className="blackAboutUs">
-					<Navbar className="nave" bgcolor="#908f8f25"/>
+				<div className="blackAboutUs">
+					<Navbar className="nave" bgcolor="#908f8f25" />
 					<div className="headingAboutUs">ABOUT US</div>
 					<p className="paraAboutUs">
-						INTO partnerships empower universities to recruit
-						international students with unparalleled reach, control
-						and transparency. Our global recruitment network,
-						digital platforms and forensic insights strengthen
-						universities’ presence in key and emerging markets,
-						while our focus on student success supports academic and
-						career achievement on campus.
+						At FarmToDoor, we believe that everyone deserves access to fresh, healthy food. 
+						That's why we connect buyers with local farmers, making it easy to purchase the 
+						freshest, highest-quality produce. Our online platform allows you to browse a wide
+						 variety of fruits, vegetables, cereals, and more, all grown by small farmers in your
+						  area. By buying from FarmToDoor, you are not only getting delicious, nutritious food,
+						   but you are also supporting your local community and building a more sustainable food system.
 					</p>
 					<div className="whyAboutUs">WHY US?</div>
 					<div className="rowAboutUs">
@@ -26,18 +25,17 @@ const about = () => {
 							className="imgAboutUs"
 						></img>
 						<p className="paraAboutUs">
-							INTO partnerships empower universities to recruit
-							international students with unparalleled reach,
-							control and transparency. Our global recruitment
-							network, digital platforms and forensic insights
-							strengthen universities’ presence in key and
-							emerging markets, while our focus on student success
-							supports academic and career achievement on campus.
+						We are also committed to helping small farmers increase their profits and build a better life for
+						 themselves and their families. Many farmers struggle to make ends meet due to unfair prices and 
+						 lack of access to markets. By selling their harvest through FarmToDoor, farmers can reach a wider 
+						 audience and earn a fair price for their hard work. This helps to support local economies, reduce
+						  food waste, and promote sustainable agriculture practices. Together, we can make a difference for 
+						  farmers and consumers alike. Thank you for choosing FarmToDoor!
 						</p>
 					</div>
 				</div>
 			</div>
-			<Footer/>
+			<Footer />
 		</div>
 	);
 };
