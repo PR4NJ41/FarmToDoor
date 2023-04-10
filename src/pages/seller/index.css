@@ -35,16 +35,12 @@
     margin-bottom: 20px;
 }
 .txtSeller {
-	font-family: "Montserrat";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 35px;
-	text-align: center;
-	letter-spacing: -0.045em;
-	color: #000000;
-	padding-top: 20px;
-	margin-left: 50px;
-	padding-bottom: 10px;
+	color: rgb(42, 236, 58);
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 65px;
+    font-family: "Montserrat";
 }
 .currentSeller {
 	height: 800px;
@@ -89,7 +85,7 @@
 #add {
 	width: 179px;
 	height: 45px;
-	background: #3287bf;
+	background: #346473;
 	border: none;
 	border-radius: 20px;
 	/* display: absolute; */
@@ -125,7 +121,7 @@
 
 ::-webkit-file-upload-button {
 	color: white;
-	background: #3287bf;
+	background: #346473;
 	padding: 13px;
     margin-right: 20px;
 	border: none;
@@ -133,10 +129,10 @@
 	outline: none;
 }
 ::-webkit-file-upload-button:hover {
-    background: #3287bfc6;
+    background: #346473;
 }
 
 #add:hover {
-    background: #3287bfc6;
+    background: #346473;
     color:white;
 }
