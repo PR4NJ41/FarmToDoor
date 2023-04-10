@@ -126,9 +126,10 @@ function Index() {
 									id = {item.cost}
 								/>
 							</div>
+
 						))}
+						<Footer/>
 					</div>
-					<Footer/>
 				</div>
 
 				<Item
