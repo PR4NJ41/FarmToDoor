@@ -1,11 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import "./item.css";
 import {useCart} from "react-use-cart"
 
 function Item(props){
+	const [Quantity,setQuantity]=useState("1");
+	const increase =()=>{
+       setQuantity(Number(Quantity)+1);
+	   
+	}
+	const decrease = () =>{
+		setQuantity((Number(Quantity)-1>1)?Number(Quantity)-1:1);
+	}
 	const { addItem } = useCart();
 	const addToCart = () =>{
-        addItem(props.kela);
+        addItem(props.master,Number(Quantity));
     }
 	
 
@@ -29,9 +37,9 @@ function Item(props){
 				<div className="lastItem">
 					<div className="leftButtonItem">
 						<div className="subleftItem">
-						<div className="minusbtnItem">-</div>
-						500g
-						<div className="plusbtnItem">+</div>
+						<div className="minusbtnItem" onClick={()=>decrease()}>-</div>
+						{Quantity} kg
+						<div className="plusbtnItem" onClick={()=>increase()}>+</div>
 						</div>
 						
 					

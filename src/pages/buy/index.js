@@ -141,7 +141,8 @@ function Index() {
 					itemPrice={ItemPrice}
 					itemImgPath={ItemImgPath}
 					itemDes={ItemDes}
-					kela = {pranjal}
+					master = {pranjal}
+					quantity={"1"}
 					// itemPath={ItemPat2}
 				/>
 			</div>
