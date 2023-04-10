@@ -81,9 +81,11 @@
     display: flex;
     text-align: center;
 }
-
 .itemsCart{
     margin-top: 50px;
+}
+.linkCart{
+    text-decoration-line: none;
 }
 
 

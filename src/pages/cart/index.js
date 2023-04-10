@@ -50,10 +50,10 @@ function Index(){
 					<div className="colCart2">{cartTotal}</div>
 				</div>
 				<div className="rowCart">
-					<Link to="/buy" className="boxNavbar">
+					<Link className="linkCart" to="/buy">
 						<div className="discCart">Continue Shopping</div>
 					</Link>
-					<Link to="/buy" className="boxNavbar">
+					<Link className="linkCart" to="/buy">
 						<div className="discCart">Checkout</div>
 					</Link>
 				</div>
