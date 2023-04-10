@@ -57,12 +57,7 @@ function Navbar(props) {
 			});
 	});
 
-	const handleSearch = (event)=>{
-		localStorage.setItem("searchKeyword",Keyword);
-		setSearchKeyword(localStorage.getItem("searchKeyword"));
-		console.log(SearchKeyword);
-		window.location.reload();
-	};
+	
 
 	return (
 		<>
@@ -80,7 +75,7 @@ function Navbar(props) {
 					Sell
 				</Link>
 				<Link to='/buy' className="boxNavbar">
-				<img className="navimg" src="/images/search.svg" onClick={handleSearch}></img>
+				<img className="navimg" src="/images/search.svg"></img>
 				 {(location.pathname === '/buy')?<input className="searchNav" onChange={(e)=>setKeyword(e.target.value)} type="text"></input>:<div></div>}
 				</Link>
 
