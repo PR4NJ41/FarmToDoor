@@ -1,19 +1,73 @@
 import { React } from "react";
-
 import "./index.css";
 import Navbar from "../../components/navbar/navbar";
-import data from "../../data.json";
-import Card2 from "../../components/card/card";
 import Footer from "../../components/footer/footer";
-const about = () => {
-    return (
+import { useState, useEffect } from "react";
+import { auth, provider, db, storage } from "../../firebase";
+import { collection, addDoc } from "firebase/firestore";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+
+async function sleep(s) {
+	return new Promise((resolve) => setTimeout(resolve, s * 1000));
+}
+
+const Seller = () => {
+	const [name, setName] = useState("");
+	const [price, setPrice] = useState("");
+	const [description, setDescription] = useState("");
+	const [pincode, setPincode] = useState("");
+	const [seller, setSeller] = useState("");
+	const [category, setCategory] = useState("Fruits");
+	const [image, setImage] = useState(null);
+	let url2 = "";
+
+	const uploadImage = () => {
+		if (image == null) return;
+		const imageRef = ref(storage, `Products/${image.name}`);
+		uploadBytes(imageRef, image).then((snapshot) => {
+			getDownloadURL(snapshot.ref).then((url) => {
+				url2 = url;
+			});
+		});
+	};
+
+	const handleSubmit = async (e) => {
+		console.log(name);
+		e.preventDefault();
+		uploadImage();
+		await sleep(5);
+
+		try {
+			const docRef = await addDoc(collection(db, "Products"), {
+				name: name,
+				price: price,
+				description: description,
+				pincode: pincode,
+				seller: seller,
+				category: category,
+				token: url2,
+			});
+			console.log("Document written with ID: ", docRef.id);
+		} catch (error) {
+			alert(error.message);
+		}
+
+		setName("");
+		setPrice("");
+		setDescription("");
+		setPincode("");
+		setSeller("");
+		setCategory("");
+		window.location.reload();
+	};
+
+	return (
 		<div>
-        
 			<div className="imgSeller"></div>
 			<Navbar bgcolor="#908f8f25" />
 			<div className="addSeller">
 				<div className="txtSeller"> Add Product For Selling</div>
-				<form className="add">
+				<form className="add" onSubmit={handleSubmit}>
 					<label className="txtSeller2" for="name">
 						Name of product:
 					</label>
@@ -21,19 +75,26 @@ const about = () => {
 						className="inputSeller"
 						type="text"
 						id="name"
+						value={name}
 						name="name"
 						placeholder="Enter Name of Product"
+						onChange={(e) => setName(e.target.value)}
+						required
 					></input>
-					<label className="txtSeller2" for="cost">
+
+					<label className="txtSeller2" for="price">
 						Cost of product(per kg)
 					</label>
 					<input
 						className="inputSeller"
 						type="number"
-						id="cost"
-						name="cost"
+						id="price"
+						name="price"
+						onChange={(e) => setPrice(e.target.value)}
+						required
 						placeholder="Enter Cost of product(per kg)"
 					></input>
+
 					<label className="txtSeller2" for="pincode">
 						Pincode of seller
 					</label>
@@ -42,8 +103,12 @@ const about = () => {
 						type="number"
 						id="pincode"
 						name="pincode"
-						placeholder="Enter Pincode of seller"
+
+						onChange={(e) => setPincode(e.target.value)}
+						required
+            placeholder="Enter Pincode of seller"
 					></input>
+
 					<label className="txtSeller2" for="desc">
 						Description of product:
 					</label>
@@ -52,8 +117,11 @@ const about = () => {
 						type="text"
 						id="desc"
 						name="desc"
-						placeholder="Enter Description of product"
+						onChange={(e) => setDescription(e.target.value)}
+						required
+            placeholder="Enter Description of product"
 					></input>
+
 					<label className="txtSeller2" for="sname">
 						Seller Name
 					</label>
@@ -62,20 +130,14 @@ const about = () => {
 						type="sname"
 						id="sname"
 						name="sname"
-						placeholder="Enter Seller Name"
+						onChange={(e) => setSeller(e.target.value)}
+						required
+            placeholder="Enter Seller Name"
 					></input>
+
 					<label className="txtSeller2" for="image">
 						Product Image
 					</label>
-					{/*
-                     <input
-                     		className="inputSeller"
-                     		type="file"
-                     		id="image"
-                     		name="image"
-                            accept="image/*"
-                     					></input> 
-                    */}
 					<div className="container">
 						<input
 							type="file"
@@ -83,12 +145,22 @@ const about = () => {
 							id="image"
 							name="image"
 							accept="image/*"
+							onChange={(event) => {
+								setImage(event.target.files[0]);
+							}}
+							required
 						/>
 					</div>
+
 					<label className="txtSeller2" for="category">
 						Choose a category
 					</label>
-					<select id="category" name="category" className="selct">
+					<select
+						id="category"
+						name="category"
+						className="selct"
+						onChange={(e) => setCategory(e.target.value)}
+					>
 						<option value="Fruits">Fruits</option>
 						<option value="Vegetables">Vegetables</option>
 						<option value="Nuts">Nuts</option>
@@ -96,7 +168,10 @@ const about = () => {
 						<option value="Cereals">Cereals</option>
 						<option value="Pulses">Pulses</option>
 					</select>
-					<div id="add">Add Item</div>
+
+					<button id="add" type="submit">
+						Add Item
+					</button>
 				</form>
 			</div>
 			{/*
@@ -114,9 +189,9 @@ const about = () => {
              				</div>
              			</div> 
             */}
-            <Footer/>
+			<Footer />
 		</div>
 	);
 };
 
-export default about;
+export default Seller;
