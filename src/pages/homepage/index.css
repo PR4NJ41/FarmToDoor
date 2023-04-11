@@ -44,7 +44,25 @@
     font-family: "Montserrat";
     padding: 0px 50px;
 }
-
+.cycleHome{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left:-90px;
+}
+.appleHome{
+    position: absolute;
+    left: 1200px;
+}
+.leafHome{
+    position: absolute;
+    left: 1200px;
+    top: 230px;
+}
+.berryHome{
+    position: absolute;
+    left: 1200px;
+}
 .searchBoxButtonHome {
     width: 179px;
     height: 66px;

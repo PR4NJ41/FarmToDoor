@@ -92,6 +92,7 @@ const Seller = () => {
 						name="price"
 						onChange={(e) => setPrice(e.target.value)}
 						required
+						placeholder="Enter Cost of product(per kg)"
 					></input>
 
 					<label className="txtSeller2" for="pincode">
@@ -102,8 +103,10 @@ const Seller = () => {
 						type="number"
 						id="pincode"
 						name="pincode"
+
 						onChange={(e) => setPincode(e.target.value)}
 						required
+            placeholder="Enter Pincode of seller"
 					></input>
 
 					<label className="txtSeller2" for="desc">
@@ -116,6 +119,7 @@ const Seller = () => {
 						name="desc"
 						onChange={(e) => setDescription(e.target.value)}
 						required
+            placeholder="Enter Description of product"
 					></input>
 
 					<label className="txtSeller2" for="sname">
@@ -128,6 +132,7 @@ const Seller = () => {
 						name="sname"
 						onChange={(e) => setSeller(e.target.value)}
 						required
+            placeholder="Enter Seller Name"
 					></input>
 
 					<label className="txtSeller2" for="image">

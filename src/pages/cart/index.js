@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.css";
 import Navbar from "../../components/navbar/navbar";
-import cart_data from "./../../cart.json";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer/footer";
 import { useCart } from 'react-use-cart';
@@ -15,10 +14,7 @@ function Index(){
         removeItem,
         emptyCart,
     } = useCart();
-	let s = 0;
-	for (let i = 0; i < cart_data.length; i++) {
-		s += Number(cart_data[i].cost) * Number(cart_data[i].quantity);
-	}
+	
 	return (
 		<div className="mainCart">
 			<Navbar bgcolor="#6ab860"/>
@@ -28,7 +24,7 @@ function Index(){
 				<div className="rowCart">
 					<text className="colCart">Product Name</text>
 					<text className="colCart">Quantity</text>
-					<text className="colCart">Price</text>
+					<text className="colCart">Price (per kg)</text>
 				</div>
 				<div className="lineCart"></div>
 				<div className="itemsCart">
