@@ -16,7 +16,7 @@
     flex-direction: column;
 }
 .headingAboutUs{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-align: center;
     padding: 5px;
     font-family: 'Montserrat';
