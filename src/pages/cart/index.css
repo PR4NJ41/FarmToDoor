@@ -14,7 +14,8 @@
     margin-bottom: 10px;
 }
 .txtCart{
-    margin-left: 48%;
+    display: flex;
+    justify-content: center;
     font-size: 37px;
     font-weight: 600;
     font-family: "Montserrat";
