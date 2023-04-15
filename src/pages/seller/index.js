@@ -58,6 +58,7 @@ const Seller = () => {
 		setPincode("");
 		setSeller("");
 		setCategory("");
+		alert("Item added for selling");
 		window.location.reload();
 	};
 
