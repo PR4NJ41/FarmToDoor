@@ -131,7 +131,6 @@ function Index() {
 						))}
 					</div>
 					<Footer/>
-
 				</div>
 
 				<Item
