@@ -38,7 +38,7 @@
 	width: 100%;
 }
 .boxProSearch {
-	top: 790px;
+	top: 847px;
 	position: absolute;
 	width: 100%;
 	background: #f6f8fa;
@@ -92,6 +92,9 @@
 	border-width: .1px;
 	height: 25px;
 	width: 300px;
+	padding: 5px;
+	margin-left: 10px;
+	font-size: 20px;
 }
 .imgSearchBuy{
 	height: 40px;
@@ -101,9 +104,13 @@
 }
 .rowBuy1{
 	position: absolute;
-	top: 450px;
+	top: 398px;
 	display: flex;
 	flex-direction: horizontal;
 	align-items: center;
-	margin-left: 38%;
+	background-color: #f6f8fa;
+	width: 100%;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }

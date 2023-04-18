@@ -8,7 +8,7 @@ const about = () => {
 		<div>
 			<div className="mainAboutUs">
 				<div className="blackAboutUs">
-					<Navbar className="nave" bgcolor="#908f8f25" />
+					<Navbar className="nave" bgcolor="#908f8f25" color="white"/>
 					<div className="headingAboutUs">ABOUT US</div>
 					<p className="paraAboutUs">
 						At FarmToDoor, we believe that everyone deserves access to fresh, healthy food. 

@@ -80,7 +80,7 @@ function Index() {
 			<div className="mainSearch">
 				<div className="box1Search"><img src="/images/basket.svg"></img><div className="eatSell">EAT FRESH AND STAY HEALTHY</div></div>
 				<div className="rowBuy1"><img className="imgSearchBuy" src="/images/search.svg"></img>
-				<input className="searchBuy" type="text" 
+				<input className="searchBuy" placeholder="Search" type="text" 
 				onChange={(e)=>
 					{setSearchKeyword(e.target.value);
 				       getProd21(e.target.value);
@@ -112,7 +112,7 @@ function Index() {
 									setItemPopup(!ItemPopup);
 									setItemNo(item.name);
 									setItemSeller(item.seller);
-									setItemPrice(item.cost);
+									setItemPrice(item.price);
 									setItemImgPath(item.token);
 									setItemDes(item.description);
 									setPranjal(item);

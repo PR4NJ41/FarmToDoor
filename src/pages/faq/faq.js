@@ -14,7 +14,7 @@ display: flex;
 	position: relative;
 	justify-content: center;
 	width: 100%;
-	height: 220vh;
+	height: 150vh;
 	background: #fff;
 	overflow-x: hidden;
 	@media (max-width: 768px) {

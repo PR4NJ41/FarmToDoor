@@ -90,9 +90,9 @@
 
 .rightItem {
 	display: flex;
-	width: 50%;
+	/* width: 50%; */
 	flex-direction: column;
-	/* width: 45%; */
+	width: 45%;
 	justify-self: flex-end;
 	/* background: #027b24; */
 	margin-right: 10%;

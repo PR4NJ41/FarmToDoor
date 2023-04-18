@@ -53,6 +53,7 @@
 .appleHome{
     position: absolute;
     left: 80%;
+    z-index: -5;
 }
 .leafHome{
     position: absolute;
@@ -97,7 +98,7 @@
     width: 200px;
     height: auto;
     left: 400px;
-
+    z-index: 0;
     position: absolute;
     top: 775px;
     left: 0px;

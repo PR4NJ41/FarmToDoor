@@ -28,7 +28,7 @@ function Item(props){
 				<div className="middleItem">
 					<img src={props.itemImgPath} className="imgItem" />
 					<div className="rightItem">
-						<div className="priceItem">Price : {props.itemPrice}</div>
+						<div className="priceItem">Price : {props.itemPrice*Number(Quantity)}</div>
 						<div className="discItem">Description</div>
 						<div className="paraItem">
 							{props.itemDes}
