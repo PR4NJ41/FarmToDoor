@@ -7,6 +7,7 @@ import Searchpage from "./pages/buy/index";
 import Aboutus from "./pages/about_us/index";
 import Cart from "./pages/cart/index";
 import Seller from "./pages/seller/index";
+import Signup from "./pages/signup/index";
 // import Test from './pages/test/index'
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
 					<Route path="/about_us" element={<Aboutus />} />
 					<Route path="/cart" element={<Cart />} />
 					<Route path="/seller" element={<Seller />} />
+					<Route path="/signup" element={<Signup />} />
 					{/* <Route path="/test" element={<Test/>}/> */}
 				</Routes>
 		</>

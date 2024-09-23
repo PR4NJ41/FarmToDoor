@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.367da270.css",
+    "main.js": "/static/js/main.b0a43ee8.js",
+    "static/media/cilantro.jpg": "/static/media/cilantro.2b209c764eab6220dbe3.jpg",
+    "static/media/seller.webp": "/static/media/seller.58cc22ddc2c803536848.webp",
+    "index.html": "/index.html",
+    "main.367da270.css.map": "/static/css/main.367da270.css.map",
+    "main.b0a43ee8.js.map": "/static/js/main.b0a43ee8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.367da270.css",
+    "static/js/main.b0a43ee8.js"
+  ]
+}
