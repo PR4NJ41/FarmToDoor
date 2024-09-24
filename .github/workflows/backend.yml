@@ -23,7 +23,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: Node-aws-ec2
+    runs-on: node
     steps:
       - name: Pull image from Docker Hub
         run: docker pull pr1y4nk4/backend:latest  # Correct Docker image name

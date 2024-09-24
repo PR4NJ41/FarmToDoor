@@ -24,7 +24,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest  # Change this to a valid runner label
+    runs-on: reactjs  # Change this to a valid runner label
     steps:
       - name: Pull image from Docker Hub
         run: docker pull pr1y4nk4/frontend:latest 
