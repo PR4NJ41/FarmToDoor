@@ -17,20 +17,20 @@ jobs:
 
       - name: Build Docker Image
         working-directory: ./frontend  # Specify the path to the frontend folder
-        run: docker build -t pr1y4nk4/frontend:latest .
+        run: docker build -t pr1y4nk4/farmtodo0r-frontend .
 
       - name: Publish Image to Docker Hub
-        run: docker push pr1y4nk4/frontend:latest 
+        run: docker push pr1y4nk4/farmtodo0r-frontend:latest 
 
   deploy:
     needs: build
     runs-on: reactjs  # Change this to a valid runner label
     steps:
       - name: Pull image from Docker Hub
-        run: docker pull pr1y4nk4/frontend:latest 
+        run: docker pull pr1y4nk4/farmtodo0r-frontend:latest 
 
       - name: Delete old container
         run: docker rm -f reactjs-app-container || true  # Ignore error if container doesn't exist
 
       - name: Run Docker Container
-        run: docker run -d -p 3000:80 --name reactjs-app-container pr1y4nk4/frontend:latest
+        run: docker run -d -p 3000:80 --name reactjs-app-container pr1y4nk4/farmtodo0r-frontend:latest
