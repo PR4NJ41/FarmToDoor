@@ -11,21 +11,26 @@ jobs:
     steps:
       - name: Checkout Source
         uses: actions/checkout@v4
-      - name: Login to docker hub
-        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}     
+
+      - name: Login to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
       - name: Build Docker Image
-      working-directory: ./frontend  # Specify the path to the backend folder
-        run: docker build -t pr1y4nk4/frontend . 
-      - name: Publish Image to docker hub
+        working-directory: ./frontend  # Specify the path to the frontend folder
+        run: docker build -t pr1y4nk4/frontend:latest .
+
+      - name: Publish Image to Docker Hub
         run: docker push pr1y4nk4/frontend:latest 
- 
+
   deploy:
     needs: build
-    runs-on: ip-172-31-39-54
+    runs-on: ubuntu-latest  # Change this to a valid runner label
     steps:
-      - name: Pull image from docker hub
+      - name: Pull image from Docker Hub
         run: docker pull pr1y4nk4/frontend:latest 
+
       - name: Delete old container
-        run: docker rm -f reactjs-app-container
+        run: docker rm -f reactjs-app-container || true  # Ignore error if container doesn't exist
+
       - name: Run Docker Container
-        run: docker run -d -p 3000:80 --name reactjs-app-container pr1y4nk4/frontend
+        run: docker run -d -p 3000:80 --name reactjs-app-container pr1y4nk4/frontend:latest
